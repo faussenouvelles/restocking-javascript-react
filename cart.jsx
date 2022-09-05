@@ -207,7 +207,7 @@ const Products = (props) => {
       <Row>
         <form
           onSubmit={(event) => {
-            restockProducts(`http://localhost:1337/api/${query}`);
+            restockProducts(`https://raw.githubusercontent.com/faussenouvelles/restocking-javascript-react/main/cart.jsx`);
             console.log(`Restock called on ${query}`);
             event.preventDefault();
           }}
