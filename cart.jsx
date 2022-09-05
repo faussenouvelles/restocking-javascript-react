@@ -196,7 +196,7 @@ const Products = (props) => {
         </Col>
         <Col>
           <h1>Cart Contents</h1>
-          <Accordion>{cartList}</Accordion>
+          <Accordion defaultActiveKey="0">{cartList}</Accordion>
         </Col>
         <Col>
           <h1>CheckOut </h1>
