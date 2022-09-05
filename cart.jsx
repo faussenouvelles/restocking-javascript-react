@@ -90,9 +90,9 @@ const Products = (props) => {
   } = ReactBootstrap;
   //  Fetch Data
   const { Fragment, useState, useEffect, useReducer } = React;
-  const [query, setQuery] = useState("http://localhost:1337/api/products");
+  const [query, setQuery] = useState("https://raw.githubusercontent.com/faussenouvelles/restocking-javascript-react/main/cart.jsx");
   const [{ data, isLoading, isError }, doFetch] = useDataApi(
-    "http://localhost:1337/api/products",
+    "https://raw.githubusercontent.com/faussenouvelles/restocking-javascript-react/main/cart.jsx",
     {
       data: [],
     }
