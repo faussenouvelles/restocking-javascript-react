@@ -105,8 +105,8 @@ const Products = (props) => {
   const photos = ["https://raw.githubusercontent.com/faussenouvelles/restocking-javascript-react/main/apple.png", "https://raw.githubusercontent.com/faussenouvelles/restocking-javascript-react/main/orange.png", "https://raw.githubusercontent.com/faussenouvelles/restocking-javascript-react/main/beans.png", "https://raw.githubusercontent.com/faussenouvelles/restocking-javascript-react/main/cabbage.png"];
 
   let list = items.map((item, index) => {
-    //let n = index + 1049;
-    //let url = "https://picsum.photos/id/" + n + "/50/50";
+    let n = index + 1049;
+    let url = "https://picsum.photos/id/" + n + "/50/50";
 
     return (
       <li key={index}>
