@@ -83,8 +83,8 @@ const Products = (props) => {
   const { Card, Accordion, Button, Container, Row, Col, Image, Input } = ReactBootstrap;
   //  Fetch Data
   const { Fragment, useState, useEffect, useReducer } = React;
-  const [query, setQuery] = useState('http://localhost:1337/api/products');
-  const [{ data, isLoading, isError }, doFetch] = useDataApi('http://localhost:1337/api/products', {
+  const [query, setQuery] = useState('https://raw.githubusercontent.com/faussenouvelles/restocking-javascript-react/main/cartSolution.jsx%204');
+  const [{ data, isLoading, isError }, doFetch] = useDataApi('https://raw.githubusercontent.com/faussenouvelles/restocking-javascript-react/main/cartSolution.jsx%204', {
     data: [],
   });
   console.log(`Rendering Products ${JSON.stringify(data)}`);
@@ -178,7 +178,7 @@ const Products = (props) => {
       <Row>
         <form
           onSubmit={(event) => {
-            restockProducts(`http://localhost:1337/api/${query}`);
+            restockProducts(`https://raw.githubusercontent.com/faussenouvelles/restocking-javascript-react/main/cartSolution.jsx%204`);
             console.log(`Restock called on ${query}`);
             event.preventDefault();
           }}
