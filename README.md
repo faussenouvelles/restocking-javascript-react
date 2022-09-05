@@ -44,6 +44,6 @@
     <!-- Load Axios and Our Component -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <script src="https://raw.githubusercontent.com/faussenouvelles/restocking-javascript-react/main/cart.jsx" defer type="text/babel"></script>
+    <script src="https://raw.githubusercontent.com/faussenouvelles/restocking-javascript-react/main/cartSolution.jsx%204" defer type="text/babel"></script>
   </body>
 </html>
