@@ -83,8 +83,8 @@ const Products = (props) => {
   const { Card, Accordion, Button, Container, Row, Col, Image, Input } = ReactBootstrap;
   //  Fetch Data
   const { Fragment, useState, useEffect, useReducer } = React;
-  const [query, setQuery] = useState('http://localhost:1337/products');
-  const [{ data, isLoading, isError }, doFetch] = useDataApi('http://localhost:1337/products', {
+  const [query, setQuery] = useState('http://localhost:1337/api/products');
+  const [{ data, isLoading, isError }, doFetch] = useDataApi('http://localhost:1337/api/products', {
     data: [],
   });
   console.log(`Rendering Products ${JSON.stringify(data)}`);
@@ -178,7 +178,7 @@ const Products = (props) => {
       <Row>
         <form
           onSubmit={(event) => {
-            restockProducts(`http://localhost:1337/${query}`);
+            restockProducts(`http://localhost:1337/api/${query}`);
             console.log(`Restock called on ${query}`);
             event.preventDefault();
           }}
